@@ -2,17 +2,23 @@
 
 Windows 原生安装与配置助手，提供 **Codex CLI + ChatGPT** 和 **Claude Code CLI + Claude Desktop** 两种模式。本仓库提供正式安装包和软件更新清单。
 
-## 下载 1.6.0
+## 下载 1.6.1
 
 打开 [最新版本](https://github.com/zhaoquan1003-cpu/Codex-Auto-Download-Releases/releases/latest)，或直接下载对应安装包：
 
 | 安装包 | 适用情况 | 大小 |
 | --- | --- | ---: |
-| [在线版](https://github.com/zhaoquan1003-cpu/Codex-Auto-Download-Releases/releases/latest/download/CodexSetup-Online.exe) | 联网下载安装，通常选择此版本 | 2.22 MiB |
-| [x64 CLI 离线版](https://github.com/zhaoquan1003-cpu/Codex-Auto-Download-Releases/releases/latest/download/CodexSetup-Offline-x64.exe) | Intel / AMD 64 位 Windows，内置官方 Codex CLI 0.170.0 | 202.59 MiB |
-| [ARM64 CLI 离线版](https://github.com/zhaoquan1003-cpu/Codex-Auto-Download-Releases/releases/latest/download/CodexSetup-Offline-arm64.exe) | Windows ARM64，内置对应官方 Codex CLI 0.170.0 | 187.72 MiB |
+| [在线版](https://github.com/zhaoquan1003-cpu/Codex-Auto-Download-Releases/releases/latest/download/CodexSetup-Online.exe) | 联网下载安装，通常选择此版本 | 2.29 MiB |
+| [x64 CLI 离线版](https://github.com/zhaoquan1003-cpu/Codex-Auto-Download-Releases/releases/latest/download/CodexSetup-Offline-x64.exe) | Intel / AMD 64 位 Windows，内置官方 Codex CLI 0.170.0 | 202.66 MiB |
+| [ARM64 CLI 离线版](https://github.com/zhaoquan1003-cpu/Codex-Auto-Download-Releases/releases/latest/download/CodexSetup-Offline-arm64.exe) | Windows ARM64，内置对应官方 Codex CLI 0.170.0 | 187.79 MiB |
 
 **离线版仅让 Codex CLI 安装不依赖下载网络。** ChatGPT 仍需联网通过 Microsoft 安装；所有版本中的 Claude Code 和 Claude Desktop 均从官方来源在线下载。账号、充值和模型使用也需要联网。Claude Code 采用原生安装，无需 Node.js，Git 为可选工具。
+
+## GitHub 部署加速
+
+1.6.1 支持在线部署 Codex CLI 时按需启动 GitHub 下载加速，自动测试最多 8 条线路并选择测试成功且延迟最低的一条。Mihomo 内核按架构首次下载并校验，所需文件下载完成、取消或失败后自动关闭；安装器退出时回收进程。仅允许 GitHub 及必要发布资源域名，不修改 Windows 系统代理。
+
+**本次公开发行未预置公共加速网关。** 未配置网关或本机订阅时仍使用普通官方下载；个人订阅和节点凭据不随安装包分发。
 
 ## 选择模式并部署
 
